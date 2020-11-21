@@ -1,0 +1,35 @@
+$grey-color: #d9d9d9;
+
+.App {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  border: 1px solid $grey-color;
+  border-radius: 5px;
+  margin: 50px;
+  min-width: 400px;
+}
+
+.container {
+  padding: 20px;
+
+  .section {
+    input,
+    textarea {
+      width: 100%;
+      margin: 8px 0px;
+    }
+  }
+}
+
+input,
+textarea {
+  padding: 7px;
+  resize: none;
+  border: 1px solid $grey-color;
+  border-radius: 2px;
+
+  &::placeholder {
+    color: $grey-color;
+  }
+}
